@@ -28,7 +28,7 @@ export default function Edit() {
   const handleEdit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://43.200.6.166/api/posts/edit", {
+      const response = await fetch("http://43.200.6.166/api/posts/edit", {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
