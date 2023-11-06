@@ -12,7 +12,7 @@ export default function Detail() {
   const { id } = useParams();
   const [postDetail, setPostDetail] = useRecoilState(PostDetailAtom);
   useEffect(() => {
-    fetch(`https://43.200.6.166/api/posts/read/detail?id=${id}`, {
+    fetch(`http://43.200.6.166/api/posts/read/detail?id=${id}`, {
       method: "GET",
     })
       .then((res) => res.json())

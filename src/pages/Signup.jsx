@@ -24,7 +24,7 @@ export default function Signup() {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://43.200.6.166/api/register", {
+      const response = await fetch("http://43.200.6.166/api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
