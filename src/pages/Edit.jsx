@@ -28,7 +28,7 @@ export default function Edit() {
   const handleEdit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://43.200.6.166/api/posts/edit", {
+      const response = await fetch("https://43.200.6.166/api/posts/edit", {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -56,7 +56,7 @@ export default function Edit() {
 
   // 게시물 내용 불러오기
   useEffect(() => {
-    fetch(`http://43.200.6.166/api/posts/read/detail?id=${id}`, {
+    fetch(`https://43.200.6.166/api/posts/read/detail?id=${id}`, {
       method: "GET",
     })
       .then((res) => res.json())
