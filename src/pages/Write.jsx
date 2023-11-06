@@ -41,7 +41,7 @@ export default function Write() {
   const handleWrite = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://43.200.6.166/api/posts/create", {
+      const response = await fetch("http://43.200.6.166/api/posts/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
