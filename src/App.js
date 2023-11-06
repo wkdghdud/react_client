@@ -30,7 +30,7 @@ function App() {
   // 로그인 함수
   const handleLogin = async () => {
     try {
-      const response = await fetch("http://43.200.6.166/api/login", {
+      const response = await fetch("https://43.200.6.166/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
