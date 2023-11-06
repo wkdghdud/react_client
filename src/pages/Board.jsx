@@ -19,7 +19,7 @@ export default function Board() {
   // DB 데이터 불러오기
   useEffect(() => {
     const user_token = localStorage.getItem("user_token");
-    fetch(`http://43.200.6.166/api/posts/read?token=${user_token}`, {
+    fetch(`https://43.200.6.166/api/posts/read?token=${user_token}`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${user_token}`,
@@ -35,7 +35,7 @@ export default function Board() {
   const handleDelete = (id) => {
     let result = window.confirm("게시물을 정말로 삭제 하시겠습니까?");
     if (result) {
-      fetch(`http://43.200.6.166/api/posts/delete?id=${id}`, {
+      fetch(`https://43.200.6.166/api/posts/delete?id=${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
