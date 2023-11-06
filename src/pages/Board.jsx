@@ -19,7 +19,7 @@ export default function Board() {
   // DB 데이터 불러오기
   useEffect(() => {
     const user_token = localStorage.getItem("user_token");
-    fetch(`https://43.200.6.166/api/posts/read?token=${user_token}`, {
+    fetch(`http://43.200.6.166/api/posts/read?token=${user_token}`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${user_token}`,

@@ -56,7 +56,7 @@ export default function Edit() {
 
   // 게시물 내용 불러오기
   useEffect(() => {
-    fetch(`https://43.200.6.166/api/posts/read/detail?id=${id}`, {
+    fetch(`http://43.200.6.166/api/posts/read/detail?id=${id}`, {
       method: "GET",
     })
       .then((res) => res.json())
